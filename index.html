@@ -3,51 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      p {
-        background-color: green;
-        color: white;
-        font-size: 18px;
-        font-weight: normal;
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
     </style>
-    <title>My Portfolio</title>
+    <title>I</title>
   </head>
   <body>
-    <div>
-      <h1 id="welcome">Hello, my name is Dwyane Sido!</h1>
-    </div>
-    <p>Internal Method styling test</p>
-    <img
-      src="img/graduation-pic.png"
-      alt="A picture of me!"
-      width="300px"
-      height="300px"
-    />
-    <p>
-      I have a very deep interest in video games, music, and animation that
-      inspires me to create and develop my own personal media. Although my main
-      passion is through my work as an artist, I am also interested in learning
-      computer science concepts to further widen my horizons. This website will
-      hopefully show you my works and achievements that I have done throughout
-      my time as a student.
-    </p>
-    <h2>My Favorite Games!</h2>
-    <ul>
-      <li>Slay the Spire</li>
-      <li>Terraria</li>
-      <li>Sekiro: Shadows Die Twice</li>
-    </ul>
-    <button style="background-color: orange; font-size: 18px">
-      Click here for nothing!
-    </button>
-    <a href="https://dwyanesido.netlify.app/">Link to my First Website</a>
-    <h3 class="odd">Number 1 - I'm a class!</h3>
-    <h3 id="second">Number 2 - I'm one ID.</h3>
-    <h3 class="odd cooler">Number 3 - I'm a class, but cooler!</h3>
-    <h3 id="fourth">Number 4 - I'm another ID.</h3>
-    <h3 class="odd">Number 5 - I'm a class!</h3>
+    <header class="header">
+      <h1 class="title">VALORANT CHARACTERS</h1>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure quos
+        magnam accusantium repellat dolore voluptates omnis consequatur eos
+        tempora harum, sequi tenetur odit dicta eum! Consequuntur animi culpa
+        quidem?
+      </p>
+    </header>
+    <main class="cards">
+      <article class="card Omen">
+        <img 
+          class="card image" 
+          src="img/Omen.png" 
+          alt="Picture of Omen" 
+        />
+        <div class="card content">
+          <div class="top-row">
+            <h2 class="name">Omen</h2>
+            <span class="badge">Controller</span>
+          </div>
+        </div>
+      </article>
+      <article class="card Chamber">
+        <img
+          class="card image"
+          src="img/Chamber.png"
+          alt="Picture of Chamber"
+        />
+        <div class="card content">Rich Guy</div>
+      </article>
+            <article class="card Phoenix">
+        <img
+          class="card image"
+          src="img/Phoenix.png"
+          alt="Picture of Phoenix"
+        />
+        <div class="card content">Fire</div>
+      </article>
+            </article>
+            <article class="card Viper">
+        <img
+          class="card image"
+          src="img/Viper.png"
+          alt="Picture of Viper"
+        />
+        <div class="card content">Toxic</div>
+      </article>
+    </main>
   </body>
 </html>

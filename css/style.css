@@ -1,28 +1,96 @@
-div {
-  background-color: red;
-  color: white;
-  font-size: 32px;
+/*
+ *  colors
+ *  #f0f6f0 white
+ *  #222323 black
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  color: #f0f6f0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #222323;
+}
+
+.header {
   text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
   font-weight: bold;
+  font-size: 90px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
-.odd {
-  background-color: lightcoral;
-  font-family: Verdana, "DejaVu Sans", sans-serif;
+.subtitle {
+  line-height: 1.2;
+  font-size: 32px;
+  text-align: justify;
+  max-width: 1465px;
 }
 
-.odd.cooler {
-  font-size: 24px;
+.cards {
+  max-width: 1440px;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  justify-content: center;
+  gap: 36px;
 }
 
-#second {
-  color: blue;
-  font-size: 36px;
-  font-weight: normal;
+.card {
+  background: #f0f6f0;
+  color: #222323;
+
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
-#fourth {
-  background-color: greenyellow;
-  font-size: 24px;
-  font-weight: bold;
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card.image {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.content {
+  padding: 24px;
+  line-height: 1.2;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: #f0f6f0;
+
+  padding: 6px 10px;
+  border-radius: 100px;
+  background: #222323;
 }
