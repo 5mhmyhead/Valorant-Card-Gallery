@@ -48,6 +48,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
   justify-content: center;
   gap: 36px;
+
+  padding-bottom: 36px;
 }
 
 .card {
@@ -93,4 +95,40 @@ body {
   padding: 6px 10px;
   border-radius: 100px;
   background: #222323;
+}
+
+.tagline {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 12px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+
+  width: 75vw;
+  height: 75px;
+  border-radius: 10px 10px 0 0;
+
+  background: #f0f6f0;
+  color: #222323;
+}
+
+.bottom p {
+
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
